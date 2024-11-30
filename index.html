@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wooth - O Significado de um Nome</title>
+    <style>
+      
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://img.freepik.com/fotos-gratis/paisagem-lunar-de-anime_23-2151645930.jpg?t=st=1732997813~exp=1733001413~hmac=578fff42a9604bab5e6e5752de3a3ef679ceb17432aeeef3f45442130c34d47a&w=1060');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+            animation: fadeIn 2s ease-out;
+        }
+
+        .content {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            width: 90%;
+            animation: fadeIn 3s ease-out;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .poetry {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-top: 30px;
+        }
+
+     
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+      
+        .show-poetry-btn {
+            background-color: #6c5ce7;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .show-poetry-btn:hover {
+            background-color: #5e54d2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Wooth</h1>
+
+    <div class="content">
+        <p>Wooth (nome próprio): Um nome que significa "aquele que observa a lua". Refere-se a uma pessoa que encontra paz e clareza ao contemplar a lua, simbolizando uma profunda conexão com a tranquilidade e a reflexão proporcionadas por sua luz.</p>
+
+        <button class="show-poetry-btn" onclick="togglePoetry()">Veja a poesia</button>
+
+        <div class="poetry" id="poetry" style="display:none;">
+            <p>Aos olhos da noite, ele se revela,<br>
+            Um cavaleiro que a lua suave consola,<br>
+            Na luz prateada, a alma aquieta,<br>
+            Paz e clareza em sua jornada secreta.</p>
+        </div>
+    </div>
+
+    <script>
+        function togglePoetry() {
+            const poetry = document.getElementById('poetry');
+            if (poetry.style.display === "none") {
+                poetry.style.display = "block";
+            } else {
+                poetry.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
